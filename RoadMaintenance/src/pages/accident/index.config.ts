@@ -1,10 +1,10 @@
 /*
  * @Author: Chen Wenhang
- * @Date: 2021-08-14 23:57:44
- * @LastEditTime: 2021-08-15 12:18:46
+ * @Date: 2021-08-15 15:04:28
+ * @LastEditTime: 2021-08-15 15:05:02
  * @Description: 
  * @Github: https://github.com/chenwenhang
  */
 export default {
-  navigationBarTitleText: '道路养护'
+  navigationBarTitleText: '突发状况'
 }

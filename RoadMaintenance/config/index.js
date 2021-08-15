@@ -1,3 +1,11 @@
+/*
+ * @Author: Chen Wenhang
+ * @Date: 2021-08-14 23:57:44
+ * @LastEditTime: 2021-08-15 12:22:19
+ * @Description: 
+ * @Github: https://github.com/chenwenhang
+ */
+const path = require('path')
 const config = {
   projectName: 'RoadMaintenance',
   date: '2021-8-14',
@@ -8,9 +16,18 @@ const config = {
     828: 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: `dist`,
   plugins: [],
   defineConstants: {
+    __VUE_OPTIONS_API__: true,
+    __VUE_PROD_DEVTOOLS__: true
+  },
+  alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/style': path.resolve(__dirname, '..', 'src/style'),
+    '@/assets': path.resolve(__dirname, '..', 'src/assets'),
+    // 'taro-ui-vue3$': path.resolve(__dirname, '../..', 'dist/index.esm.js'),
+    // 'taro-ui-vue3/dist/style': path.resolve(__dirname, '../..', 'dist/style'),
   },
   copy: {
     patterns: [
@@ -34,7 +51,7 @@ const config = {
         }
       },
       cssModules: {
-        enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
+        enable: true, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
@@ -52,7 +69,7 @@ const config = {
         }
       },
       cssModules: {
-        enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
+        enable: true, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
