@@ -12,7 +12,7 @@
       />
     </view>
     <!-- title -->
-    <view class="page-title">道路养护助手</view>
+    <view class="page-title">道路养护管理端</view>
     <!-- module list -->
     <view class="module-list">
       <view
@@ -55,16 +55,28 @@ export default defineComponent({
     const state = reactive({
       list: [
         {
-          id: 'client',
-          title: '客户端',
-          content: '提供基本使用功能',
+          id: 'road',
+          title: '道路情况',
+          content: '展示当前道路情况信息',
           icon: iconBasic
         },
         {
-          id: 'server',
-          title: '管理端',
-          content: '提供系统管理功能',
+          id: 'vehicle',
+          title: '车辆作业',
+          content: '车辆作业时间、路段管理',
           icon: iconView
+        },
+        {
+          id: 'person',
+          title: '人员管理',
+          content: '值班日历、人员请假',
+          icon: iconAction
+        },
+        {
+          id: 'accident',
+          title: '突发状况',
+          content: '报警功能、处理突发情况、拍照上传',
+          icon: iconForm
         },
       ]
     })

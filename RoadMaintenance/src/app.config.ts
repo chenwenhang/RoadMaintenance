@@ -12,6 +12,9 @@ export default {
     'pages/vehicle/index',
     'pages/person/index',
     'pages/accident/index',
+    'pages/client/index',
+    'pages/server/index',
+    'pages/holiday/index',
   ],
   window: {
     backgroundTextStyle: 'light',

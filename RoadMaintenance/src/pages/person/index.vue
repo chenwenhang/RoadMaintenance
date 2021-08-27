@@ -11,7 +11,7 @@
       <AtCalendar />
     </panel>
 
-    <panel title="值班安排">
+    <panel title="当日值班安排">
       <AtForm v-for="item in personData" :key="item.type">
         <AtInput
           name="值班人员"
